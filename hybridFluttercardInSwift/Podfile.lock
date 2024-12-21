@@ -1,0 +1,35 @@
+PODS:
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+    - vwo_insights_flutter_sdk
+  - vwo-insights-ios-flutter-sdk (0.0.4)
+  - vwo_insights_flutter_sdk (0.0.2):
+    - Flutter
+    - vwo-insights-ios-flutter-sdk
+
+DEPENDENCIES:
+  - Flutter (from `../my_flutter_module/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `../my_flutter_module/.ios/Flutter/FlutterPluginRegistrant`)
+  - vwo-insights-ios-flutter-sdk (from `/Users/parveshchauhan/Desktop/vwo`)
+  - vwo_insights_flutter_sdk (from `../my_flutter_module/.ios/.symlinks/plugins/vwo_insights_flutter_sdk/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../my_flutter_module/.ios/Flutter"
+  FlutterPluginRegistrant:
+    :path: "../my_flutter_module/.ios/Flutter/FlutterPluginRegistrant"
+  vwo-insights-ios-flutter-sdk:
+    :path: "/Users/parveshchauhan/Desktop/vwo"
+  vwo_insights_flutter_sdk:
+    :path: "../my_flutter_module/.ios/.symlinks/plugins/vwo_insights_flutter_sdk/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  FlutterPluginRegistrant: 4edd24c814eb6c066959c49b4067da3af945ae70
+  vwo-insights-ios-flutter-sdk: 78c38eb6c5aa32afef074431eb0739022cb0a304
+  vwo_insights_flutter_sdk: 26f98ba24ed97b6cdfc1286a52d60ee9d5dbad5c
+
+PODFILE CHECKSUM: 063e6cf33e09fee76629b73370b76a7b56076691
+
+COCOAPODS: 1.15.2

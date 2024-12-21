@@ -7,6 +7,7 @@
 
 import UIKit
 import vwo_insights_ios_flutter_sdk
+//import vwo_insights_flutter_sdk
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,12 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//        VWO.initialSetup()  
         VWO.enableLog(logLevel: .all)
         VWO.setHybridEnable()
         let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
           NSLog("Document Path: %@", documentsPath)
-       
+//       
         VWO.configure(accountId: "780027", appId: "e7277b4225ee69ca8d60b2994556dfc3", userId: "", isModuleEnabled: true) { result in
            
             VWO.startSessionRecording()

@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '12.0'
+
+flutter_application_path = '/Users/parveshchauhan/Documents/mixproject/fluttercardinsideswift/my_flutter_module'
+load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+
+target 'hybridFluttercardInSwift' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  
+  use_frameworks!
+  use_modular_headers!
+  # Pods for hybridFluttercardInSwift
+  
+  pod 'vwo-insights-ios-flutter-sdk' , :path => '/Users/parveshchauhan/Desktop/vwo'
+  
+#  flutter_application_path = '/Users/parveshchauhan/Documents/mixproject/fluttercardinsideswift/my_flutter_module'
+#  eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)
+
+ install_all_flutter_pods(flutter_application_path)
+
+end
+
+post_install do |installer|
+  flutter_post_install(installer) if defined?(flutter_post_install)
+end

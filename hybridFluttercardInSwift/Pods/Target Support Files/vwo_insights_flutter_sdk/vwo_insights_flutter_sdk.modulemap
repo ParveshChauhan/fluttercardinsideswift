@@ -1,0 +1,6 @@
+framework module vwo_insights_flutter_sdk {
+  umbrella header "vwo_insights_flutter_sdk-umbrella.h"
+
+  export *
+  module * { export * }
+}

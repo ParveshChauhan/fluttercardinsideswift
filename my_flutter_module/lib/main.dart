@@ -1,14 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:vwo_insights_flutter_sdk/vwo_insights_flutter_sdk.dart';
 
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // VwoFlutter.tagScreenName("screenName");
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    VwoFlutter.setScreenViewed("flutter card");
+    // VwoFlutter.tagScreenName("screenName");
+    // VwoFlutter.pauseRecording();
     return MaterialApp(
+      // navigatorObservers: [
+      //   VwoNavigatorObserver(),
+      // ],
       home: Scaffold(
         body: Center(
           child: Card(
@@ -53,6 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
+      // VwoFlutter.tagScreenName("flutter card");
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
       // so that the display can reflect the updated values. If we changed

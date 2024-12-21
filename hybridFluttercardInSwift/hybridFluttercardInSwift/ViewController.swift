@@ -9,18 +9,20 @@ import UIKit
 import vwo_insights_ios_flutter_sdk
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var openVcButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        VWO.setScreenName(name: "viewController")
+    }
     override func viewDidAppear(_ animated: Bool) {
-        VWO.hideView(view: openVcButton)
     }
-
+    
+    @IBAction func openSwiftCard(_ sender: Any) {
+       
+    }
+    
 }
-

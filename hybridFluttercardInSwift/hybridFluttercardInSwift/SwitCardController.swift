@@ -28,12 +28,21 @@ class SwiftCardController: UIViewController {
                 flutterViewController.didMove(toParent: self)
         
         
+        self.navigationItem.hidesBackButton = true
+        let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItem.Style.plain, target: self, action: #selector(back))
+        self.navigationItem.leftBarButtonItem = newBackButton
         
        
     }
-
+    
+    @objc func back(sender: UIBarButtonItem) {
+        self.dismiss(animated: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        VWO.setScreenName(name: "swiftcard")
+    }
     override func viewDidAppear(_ animated: Bool) {
-        VWO.hideView(view: Card4)
     }
 
 }

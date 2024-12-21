@@ -6,7 +6,7 @@
 //
 
 import Flutter
-//import FlutterPluginRegistrant
+import FlutterPluginRegistrant
 
 class FlutterManager {
     static let shared = FlutterManager()
@@ -14,6 +14,6 @@ class FlutterManager {
 
     private init() {
         flutterEngine.run()
-//        GeneratedPluginRegistrant.register(with: flutterEngine)
+         GeneratedPluginRegistrant.register(with: flutterEngine)
     }
 }

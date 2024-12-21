@@ -1,0 +1,34 @@
+{
+  "name": "vwo_insights_flutter_sdk",
+  "version": "0.0.2",
+  "summary": "Deeply understand user experiences on Flutter apps",
+  "description": "VWO Insights helps you analyze user behavior in your application based on interactions such as application launch, taps, scrolls, and flings. By attributing these actions to critical business events like purchases and sign-ups (which are considered conversions), VWO Insights enables you to identify why users might not be converting. This tool is essential in the research stage of experience optimization, providing insights into what users are (or are not) doing in your application and helping to determine why.",
+  "homepage": "https://vwo.com/",
+  "license": {
+    "file": "../LICENSE"
+  },
+  "authors": {
+    "Wingify": "support@vwo.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "Classes/**/*",
+  "dependencies": {
+    "vwo-insights-ios-flutter-sdk": [
+
+    ],
+    "Flutter": [
+
+    ]
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES",
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "i386"
+  },
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
+}

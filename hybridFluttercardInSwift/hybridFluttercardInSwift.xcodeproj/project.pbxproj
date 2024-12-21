@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4AFB1FF8301E9F375BBFA9F /* Pods_hybridFluttercardInSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180714576A625778806EA08C /* Pods_hybridFluttercardInSwift.framework */; };
 		BAE034522D0C0F76008B7DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE034512D0C0F76008B7DD2 /* AppDelegate.swift */; };
 		BAE034542D0C0F76008B7DD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE034532D0C0F76008B7DD2 /* SceneDelegate.swift */; };
 		BAE034562D0C0F76008B7DD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE034552D0C0F76008B7DD2 /* ViewController.swift */; };
@@ -14,32 +15,12 @@
 		BAE0345B2D0C0F78008B7DD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE0345A2D0C0F78008B7DD2 /* Assets.xcassets */; };
 		BAE0345E2D0C0F78008B7DD2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BAE0345D2D0C0F78008B7DD2 /* Base */; };
 		BAE034662D0C1015008B7DD2 /* SwitCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE034652D0C1015008B7DD2 /* SwitCardController.swift */; };
-		BAE0346A2D0C1513008B7DD2 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE034682D0C1513008B7DD2 /* App.xcframework */; };
-		BAE0346B2D0C1513008B7DD2 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAE034682D0C1513008B7DD2 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BAE0346C2D0C1513008B7DD2 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE034692D0C1513008B7DD2 /* Flutter.xcframework */; };
-		BAE0346D2D0C1513008B7DD2 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAE034692D0C1513008B7DD2 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BAE034702D0C153A008B7DD2 /* FlutterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE0346F2D0C153A008B7DD2 /* FlutterManager.swift */; };
-		BAE034742D0C1C1B008B7DD2 /* vwo_insights_ios_flutter_sdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE034712D0C19FA008B7DD2 /* vwo_insights_ios_flutter_sdk.xcframework */; };
-		BAE034752D0C1C1B008B7DD2 /* vwo_insights_ios_flutter_sdk.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAE034712D0C19FA008B7DD2 /* vwo_insights_ios_flutter_sdk.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		BAE0346E2D0C1513008B7DD2 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				BAE0346D2D0C1513008B7DD2 /* Flutter.xcframework in Embed Frameworks */,
-				BAE034752D0C1C1B008B7DD2 /* vwo_insights_ios_flutter_sdk.xcframework in Embed Frameworks */,
-				BAE0346B2D0C1513008B7DD2 /* App.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		180714576A625778806EA08C /* Pods_hybridFluttercardInSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hybridFluttercardInSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A93B7E4215F61C2238F3AB59 /* Pods-hybridFluttercardInSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hybridFluttercardInSwift.release.xcconfig"; path = "Target Support Files/Pods-hybridFluttercardInSwift/Pods-hybridFluttercardInSwift.release.xcconfig"; sourceTree = "<group>"; };
 		BAE0344E2D0C0F76008B7DD2 /* hybridFluttercardInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hybridFluttercardInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE034512D0C0F76008B7DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAE034532D0C0F76008B7DD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +33,14 @@
 		BAE034682D0C1513008B7DD2 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = ../my_flutter_module/build/ios/framework/Debug/App.xcframework; sourceTree = "<group>"; };
 		BAE034692D0C1513008B7DD2 /* Flutter.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:S8QB4VV633:FLUTTER.IO LLC"; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = ../my_flutter_module/build/ios/framework/Debug/Flutter.xcframework; sourceTree = "<group>"; };
 		BAE0346F2D0C153A008B7DD2 /* FlutterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterManager.swift; sourceTree = "<group>"; };
-		BAE034712D0C19FA008B7DD2 /* vwo_insights_ios_flutter_sdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = vwo_insights_ios_flutter_sdk.xcframework; path = ../../../../Desktop/vwo_insights_ios_flutter_sdk.xcframework; sourceTree = "<group>"; };
+		BAF102742D12AE5B00FDBC96 /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlutterPluginRegistrant.xcframework; path = ../my_flutter_module/build/ios/framework/Debug/FlutterPluginRegistrant.xcframework; sourceTree = "<group>"; };
+		BAF1027F2D13076900FDBC96 /* vwo_insights_flutter_sdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = vwo_insights_flutter_sdk.xcframework; path = ../my_flutter_module/build/ios/framework/Debug/vwo_insights_flutter_sdk.xcframework; sourceTree = "<group>"; };
+		BAF102A52D14625300FDBC96 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = ../my_flutter_module/build/ios/framework/Release/App.xcframework; sourceTree = "<group>"; };
+		BAF102A62D14625300FDBC96 /* Flutter.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:S8QB4VV633:FLUTTER.IO LLC"; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = ../my_flutter_module/build/ios/framework/Release/Flutter.xcframework; sourceTree = "<group>"; };
+		BAF102A72D14625300FDBC96 /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlutterPluginRegistrant.xcframework; path = ../my_flutter_module/build/ios/framework/Release/FlutterPluginRegistrant.xcframework; sourceTree = "<group>"; };
+		BAF102A82D14625300FDBC96 /* vwo_insights_flutter_sdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = vwo_insights_flutter_sdk.xcframework; path = ../my_flutter_module/build/ios/framework/Release/vwo_insights_flutter_sdk.xcframework; sourceTree = "<group>"; };
+		BAF102B22D14629F00FDBC96 /* vwo_insights_ios_flutter_sdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = vwo_insights_ios_flutter_sdk.xcframework; path = ../../../../Desktop/vwo/vwo_insights_ios_flutter_sdk.xcframework; sourceTree = "<group>"; };
+		CEA71D4B0F5A14ADCA4612FC /* Pods-hybridFluttercardInSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hybridFluttercardInSwift.debug.xcconfig"; path = "Target Support Files/Pods-hybridFluttercardInSwift/Pods-hybridFluttercardInSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,21 +48,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAE0346C2D0C1513008B7DD2 /* Flutter.xcframework in Frameworks */,
-				BAE034742D0C1C1B008B7DD2 /* vwo_insights_ios_flutter_sdk.xcframework in Frameworks */,
-				BAE0346A2D0C1513008B7DD2 /* App.xcframework in Frameworks */,
+				B4AFB1FF8301E9F375BBFA9F /* Pods_hybridFluttercardInSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68E592F81E1EA04184EDC91C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEA71D4B0F5A14ADCA4612FC /* Pods-hybridFluttercardInSwift.debug.xcconfig */,
+				A93B7E4215F61C2238F3AB59 /* Pods-hybridFluttercardInSwift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BAE034452D0C0F76008B7DD2 = {
 			isa = PBXGroup;
 			children = (
 				BAE034502D0C0F76008B7DD2 /* hybridFluttercardInSwift */,
 				BAE0344F2D0C0F76008B7DD2 /* Products */,
 				BAE034672D0C1512008B7DD2 /* Frameworks */,
+				68E592F81E1EA04184EDC91C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,9 +101,16 @@
 		BAE034672D0C1512008B7DD2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BAE034712D0C19FA008B7DD2 /* vwo_insights_ios_flutter_sdk.xcframework */,
+				BAF102B22D14629F00FDBC96 /* vwo_insights_ios_flutter_sdk.xcframework */,
+				BAF102A52D14625300FDBC96 /* App.xcframework */,
+				BAF102A62D14625300FDBC96 /* Flutter.xcframework */,
+				BAF102A72D14625300FDBC96 /* FlutterPluginRegistrant.xcframework */,
+				BAF102A82D14625300FDBC96 /* vwo_insights_flutter_sdk.xcframework */,
+				BAF1027F2D13076900FDBC96 /* vwo_insights_flutter_sdk.xcframework */,
+				BAF102742D12AE5B00FDBC96 /* FlutterPluginRegistrant.xcframework */,
 				BAE034682D0C1513008B7DD2 /* App.xcframework */,
 				BAE034692D0C1513008B7DD2 /* Flutter.xcframework */,
+				180714576A625778806EA08C /* Pods_hybridFluttercardInSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,10 +122,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAE034622D0C0F78008B7DD2 /* Build configuration list for PBXNativeTarget "hybridFluttercardInSwift" */;
 			buildPhases = (
+				0DF00F607154FE05A07DC920 /* [CP] Check Pods Manifest.lock */,
+				B0300738D89F1752A0A6BE73 /* [CP-User] Run Flutter Build my_flutter_module Script */,
 				BAE0344A2D0C0F76008B7DD2 /* Sources */,
 				BAE0344B2D0C0F76008B7DD2 /* Frameworks */,
 				BAE0344C2D0C0F76008B7DD2 /* Resources */,
-				BAE0346E2D0C1513008B7DD2 /* Embed Frameworks */,
+				686960E9553CC3D879093468 /* [CP] Embed Pods Frameworks */,
+				D50466ABCE3187775DB83F83 /* [CP-User] Embed Flutter Build my_flutter_module Script */,
 			);
 			buildRules = (
 			);
@@ -178,6 +184,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DF00F607154FE05A07DC920 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hybridFluttercardInSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		686960E9553CC3D879093468 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hybridFluttercardInSwift/Pods-hybridFluttercardInSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hybridFluttercardInSwift/Pods-hybridFluttercardInSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hybridFluttercardInSwift/Pods-hybridFluttercardInSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0300738D89F1752A0A6BE73 /* [CP-User] Run Flutter Build my_flutter_module Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build my_flutter_module Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../my_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+		D50466ABCE3187775DB83F83 /* [CP-User] Embed Flutter Build my_flutter_module Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Embed Flutter Build my_flutter_module Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../my_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BAE0344A2D0C0F76008B7DD2 /* Sources */ = {
@@ -335,13 +403,30 @@
 		};
 		BAE034632D0C0F78008B7DD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEA71D4B0F5A14ADCA4612FC /* Pods-hybridFluttercardInSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UWL3SZ844S;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/parveshchauhan/Documents/mixproject/fluttercardinsideswift/my_flutter_module/build/ios/framework/Debug,
+					/Users/parveshchauhan/Documents/mixproject/fluttercardinsideswift/my_flutter_module,
+					"$(PROJECT_DIR)/../my_flutter_module/.ios/Flutter",
+					/Users/parveshchauhan/Documents/mixproject/fluttercardinsideswift/my_flutter_module/.ios/Flutter,
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Pods",
+					"$(inherited)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/parveshchauhan/Documents/mixproject/fluttercardinsideswift/my_flutter_module/.ios/Flutter,
+					"$(PROJECT_DIR)/Pods",
+				);
 				INFOPLIST_FILE = hybridFluttercardInSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -363,12 +448,16 @@
 		};
 		BAE034642D0C0F78008B7DD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A93B7E4215F61C2238F3AB59 /* Pods-hybridFluttercardInSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UWL3SZ844S;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = hybridFluttercardInSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

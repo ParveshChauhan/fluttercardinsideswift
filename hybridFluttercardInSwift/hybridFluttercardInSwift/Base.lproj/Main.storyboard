@@ -23,7 +23,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Go to card screen"/>
                                 <connections>
-                                    <segue destination="Inh-ct-Lo0" kind="show" id="6hr-JX-ijz"/>
+                                    <action selector="openSwiftCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YsT-Nh-Zdj"/>
+                                    <segue destination="UJJ-Gq-SNO" kind="presentation" modalPresentationStyle="fullScreen" id="VGr-07-lKq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -42,16 +43,16 @@
             </objects>
             <point key="canvasLocation" x="-13" y="4"/>
         </scene>
-        <!--Swift Card Controller-->
+        <!--Cards-->
         <scene sceneID="vjo-MO-B1V">
             <objects>
                 <viewController id="Inh-ct-Lo0" customClass="SwiftCardController" customModule="hybridFluttercardInSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5lI-QR-I7S">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="990"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7PB-4O-3uI">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="990"/>
+                                <rect key="frame" x="0.0" y="44" width="393" height="956"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Or-Qa-hwE">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
@@ -74,14 +75,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAb-A4-Viu">
-                                                <rect key="frame" x="10" y="260" width="373" height="200"/>
+                                                <rect key="frame" x="10" y="260" width="373" height="400"/>
                                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="200" id="4b0-tG-j9Q"/>
+                                                    <constraint firstAttribute="height" constant="400" id="4b0-tG-j9Q"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kt-28-ckf">
-                                                <rect key="frame" x="10" y="470" width="373" height="200"/>
+                                                <rect key="frame" x="10" y="670" width="373" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8P-be-wbB">
                                                         <rect key="frame" x="155.66666666666666" y="87.333333333333371" width="61.666666666666657" height="25.333333333333329"/>
@@ -98,7 +99,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZK-Ue-MNB">
-                                                <rect key="frame" x="10" y="680" width="373" height="200"/>
+                                                <rect key="frame" x="10" y="880" width="373" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDE-dx-XmC">
                                                         <rect key="frame" x="155.66666666666666" y="87.333333333333371" width="62" height="25.333333333333329"/>
@@ -153,7 +154,7 @@
                             <constraint firstItem="7PB-4O-3uI" firstAttribute="top" secondItem="LPn-lg-hot" secondAttribute="top" id="tK5-Se-Jc5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lZp-GW-9ag"/>
+                    <navigationItem key="navigationItem" title="Cards" id="lZp-GW-9ag"/>
                     <size key="freeformSize" width="393" height="1000"/>
                     <connections>
                         <outlet property="Card1" destination="sBu-hY-Kpg" id="tSl-wm-CbG"/>
@@ -164,7 +165,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8iW-QP-YIf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1133.5877862595419" y="14.788732394366198"/>
+            <point key="canvasLocation" x="1666.4122137404579" y="22.535211267605636"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ab0-Wh-1HR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UJJ-Gq-SNO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8MH-5A-U2e">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Inh-ct-Lo0" kind="relationship" relationship="rootViewController" id="gP3-Xr-v8a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Le3-Zv-edM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="739.69465648854964" y="22.535211267605636"/>
         </scene>
     </scenes>
     <resources>
@@ -172,7 +191,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
