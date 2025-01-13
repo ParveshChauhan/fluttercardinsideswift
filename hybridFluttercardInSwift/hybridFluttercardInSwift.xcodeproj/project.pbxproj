@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		B4AFB1FF8301E9F375BBFA9F /* Pods_hybridFluttercardInSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180714576A625778806EA08C /* Pods_hybridFluttercardInSwift.framework */; };
+		BAD4EC172D31325F00BA242E /* SwiftuiShowcaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC162D31325F00BA242E /* SwiftuiShowcaseVC.swift */; };
+		BAD4EC322D3132FB00BA242E /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC192D3132FB00BA242E /* FetchData.swift */; };
+		BAD4EC332D3132FB00BA242E /* CrashAnrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC1B2D3132FB00BA242E /* CrashAnrView.swift */; };
+		BAD4EC342D3132FB00BA242E /* CustomComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC1D2D3132FB00BA242E /* CustomComponentView.swift */; };
+		BAD4EC352D3132FB00BA242E /* CustomAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC1F2D3132FB00BA242E /* CustomAttribute.swift */; };
+		BAD4EC362D3132FB00BA242E /* CustomPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC212D3132FB00BA242E /* CustomPopupView.swift */; };
+		BAD4EC372D3132FB00BA242E /* DayInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC232D3132FB00BA242E /* DayInfoRow.swift */; };
+		BAD4EC382D3132FB00BA242E /* DayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC242D3132FB00BA242E /* DayList.swift */; };
+		BAD4EC392D3132FB00BA242E /* DayListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC252D3132FB00BA242E /* DayListViewModel.swift */; };
+		BAD4EC3A2D3132FB00BA242E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC272D3132FB00BA242E /* DetailView.swift */; };
+		BAD4EC3B2D3132FB00BA242E /* CustomGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC292D3132FB00BA242E /* CustomGestureView.swift */; };
+		BAD4EC3C2D3132FB00BA242E /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC2B2D3132FB00BA242E /* GroceryListView.swift */; };
+		BAD4EC3D2D3132FB00BA242E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC2D2D3132FB00BA242E /* MainView.swift */; };
+		BAD4EC3E2D3132FB00BA242E /* MainViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC2E2D3132FB00BA242E /* MainViewVM.swift */; };
+		BAD4EC3F2D3132FB00BA242E /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC302D3132FB00BA242E /* ViewModelProtocol.swift */; };
 		BAE034522D0C0F76008B7DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE034512D0C0F76008B7DD2 /* AppDelegate.swift */; };
 		BAE034542D0C0F76008B7DD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE034532D0C0F76008B7DD2 /* SceneDelegate.swift */; };
 		BAE034562D0C0F76008B7DD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE034552D0C0F76008B7DD2 /* ViewController.swift */; };
@@ -21,6 +36,21 @@
 /* Begin PBXFileReference section */
 		180714576A625778806EA08C /* Pods_hybridFluttercardInSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hybridFluttercardInSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93B7E4215F61C2238F3AB59 /* Pods-hybridFluttercardInSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hybridFluttercardInSwift.release.xcconfig"; path = "Target Support Files/Pods-hybridFluttercardInSwift/Pods-hybridFluttercardInSwift.release.xcconfig"; sourceTree = "<group>"; };
+		BAD4EC162D31325F00BA242E /* SwiftuiShowcaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiShowcaseVC.swift; sourceTree = "<group>"; };
+		BAD4EC192D3132FB00BA242E /* FetchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
+		BAD4EC1B2D3132FB00BA242E /* CrashAnrView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashAnrView.swift; sourceTree = "<group>"; };
+		BAD4EC1D2D3132FB00BA242E /* CustomComponentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomComponentView.swift; sourceTree = "<group>"; };
+		BAD4EC1F2D3132FB00BA242E /* CustomAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAttribute.swift; sourceTree = "<group>"; };
+		BAD4EC212D3132FB00BA242E /* CustomPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPopupView.swift; sourceTree = "<group>"; };
+		BAD4EC232D3132FB00BA242E /* DayInfoRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfoRow.swift; sourceTree = "<group>"; };
+		BAD4EC242D3132FB00BA242E /* DayList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayList.swift; sourceTree = "<group>"; };
+		BAD4EC252D3132FB00BA242E /* DayListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayListViewModel.swift; sourceTree = "<group>"; };
+		BAD4EC272D3132FB00BA242E /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		BAD4EC292D3132FB00BA242E /* CustomGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomGestureView.swift; sourceTree = "<group>"; };
+		BAD4EC2B2D3132FB00BA242E /* GroceryListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
+		BAD4EC2D2D3132FB00BA242E /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BAD4EC2E2D3132FB00BA242E /* MainViewVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewVM.swift; sourceTree = "<group>"; };
+		BAD4EC302D3132FB00BA242E /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		BAE0344E2D0C0F76008B7DD2 /* hybridFluttercardInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hybridFluttercardInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE034512D0C0F76008B7DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAE034532D0C0F76008B7DD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +94,115 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BAD4EC182D3132AF00BA242E /* SwiftUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				BAD4EC1A2D3132FB00BA242E /* Network */,
+				BAD4EC312D3132FB00BA242E /* Views */,
+			);
+			path = SwiftUIViews;
+			sourceTree = "<group>";
+		};
+		BAD4EC1A2D3132FB00BA242E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BAD4EC192D3132FB00BA242E /* FetchData.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BAD4EC1C2D3132FB00BA242E /* CrashANR */ = {
+			isa = PBXGroup;
+			children = (
+				BAD4EC1B2D3132FB00BA242E /* CrashAnrView.swift */,
+			);
+			path = CrashANR;
+			sourceTree = "<group>";
+		};
+		BAD4EC1E2D3132FB00BA242E /* CustomComponent */ = {
+			isa = PBXGroup;
+			children = (
+				BAD4EC1D2D3132FB00BA242E /* CustomComponentView.swift */,
+			);
+			path = CustomComponent;
+			sourceTree = "<group>";
+		};
+		BAD4EC202D3132FB00BA242E /* CustomEvents */ = {
+			isa = PBXGroup;
+			children = (
+				BAD4EC1F2D3132FB00BA242E /* CustomAttribute.swift */,
+			);
+			path = CustomEvents;
+			sourceTree = "<group>";
+		};
+		BAD4EC222D3132FB00BA242E /* CustomPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				BAD4EC212D3132FB00BA242E /* CustomPopupView.swift */,
+			);
+			path = CustomPopUp;
+			sourceTree = "<group>";
+		};
+		BAD4EC262D3132FB00BA242E /* DayList */ = {
+			isa = PBXGroup;
+			children = (
+				BAD4EC232D3132FB00BA242E /* DayInfoRow.swift */,
+				BAD4EC242D3132FB00BA242E /* DayList.swift */,
+				BAD4EC252D3132FB00BA242E /* DayListViewModel.swift */,
+			);
+			path = DayList;
+			sourceTree = "<group>";
+		};
+		BAD4EC282D3132FB00BA242E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BAD4EC272D3132FB00BA242E /* DetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		BAD4EC2A2D3132FB00BA242E /* gestureView */ = {
+			isa = PBXGroup;
+			children = (
+				BAD4EC292D3132FB00BA242E /* CustomGestureView.swift */,
+			);
+			path = gestureView;
+			sourceTree = "<group>";
+		};
+		BAD4EC2C2D3132FB00BA242E /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				BAD4EC2B2D3132FB00BA242E /* GroceryListView.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		BAD4EC2F2D3132FB00BA242E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BAD4EC2D2D3132FB00BA242E /* MainView.swift */,
+				BAD4EC2E2D3132FB00BA242E /* MainViewVM.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BAD4EC312D3132FB00BA242E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BAD4EC1C2D3132FB00BA242E /* CrashANR */,
+				BAD4EC1E2D3132FB00BA242E /* CustomComponent */,
+				BAD4EC202D3132FB00BA242E /* CustomEvents */,
+				BAD4EC222D3132FB00BA242E /* CustomPopUp */,
+				BAD4EC262D3132FB00BA242E /* DayList */,
+				BAD4EC282D3132FB00BA242E /* Detail */,
+				BAD4EC2A2D3132FB00BA242E /* gestureView */,
+				BAD4EC2C2D3132FB00BA242E /* ListView */,
+				BAD4EC2F2D3132FB00BA242E /* Main */,
+				BAD4EC302D3132FB00BA242E /* ViewModelProtocol.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BAE034452D0C0F76008B7DD2 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +224,7 @@
 		BAE034502D0C0F76008B7DD2 /* hybridFluttercardInSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BAD4EC182D3132AF00BA242E /* SwiftUIViews */,
 				BAE034512D0C0F76008B7DD2 /* AppDelegate.swift */,
 				BAE034532D0C0F76008B7DD2 /* SceneDelegate.swift */,
 				BAE034552D0C0F76008B7DD2 /* ViewController.swift */,
@@ -94,6 +234,7 @@
 				BAE0345A2D0C0F78008B7DD2 /* Assets.xcassets */,
 				BAE0345C2D0C0F78008B7DD2 /* LaunchScreen.storyboard */,
 				BAE0345F2D0C0F78008B7DD2 /* Info.plist */,
+				BAD4EC162D31325F00BA242E /* SwiftuiShowcaseVC.swift */,
 			);
 			path = hybridFluttercardInSwift;
 			sourceTree = "<group>";
@@ -253,10 +394,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAE034702D0C153A008B7DD2 /* FlutterManager.swift in Sources */,
+				BAD4EC3D2D3132FB00BA242E /* MainView.swift in Sources */,
+				BAD4EC3E2D3132FB00BA242E /* MainViewVM.swift in Sources */,
+				BAD4EC372D3132FB00BA242E /* DayInfoRow.swift in Sources */,
+				BAD4EC322D3132FB00BA242E /* FetchData.swift in Sources */,
+				BAD4EC332D3132FB00BA242E /* CrashAnrView.swift in Sources */,
+				BAD4EC352D3132FB00BA242E /* CustomAttribute.swift in Sources */,
+				BAD4EC172D31325F00BA242E /* SwiftuiShowcaseVC.swift in Sources */,
+				BAD4EC362D3132FB00BA242E /* CustomPopupView.swift in Sources */,
+				BAD4EC3B2D3132FB00BA242E /* CustomGestureView.swift in Sources */,
+				BAD4EC3C2D3132FB00BA242E /* GroceryListView.swift in Sources */,
 				BAE034662D0C1015008B7DD2 /* SwitCardController.swift in Sources */,
 				BAE034562D0C0F76008B7DD2 /* ViewController.swift in Sources */,
 				BAE034522D0C0F76008B7DD2 /* AppDelegate.swift in Sources */,
+				BAD4EC382D3132FB00BA242E /* DayList.swift in Sources */,
 				BAE034542D0C0F76008B7DD2 /* SceneDelegate.swift in Sources */,
+				BAD4EC3F2D3132FB00BA242E /* ViewModelProtocol.swift in Sources */,
+				BAD4EC342D3132FB00BA242E /* CustomComponentView.swift in Sources */,
+				BAD4EC3A2D3132FB00BA242E /* DetailView.swift in Sources */,
+				BAD4EC392D3132FB00BA242E /* DayListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

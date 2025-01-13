@@ -1,34 +1,111 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:vwo_insights_flutter_sdk/vwo_insights_flutter_sdk.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  const MethodChannel channel = MethodChannel('com.example.flutter/arguments');
+
+  // Default to 'card' if no arguments are received
+  channel.setMethodCallHandler((call) async {
+    if (call.method == 'setScreen') {
+      print("Received screen argument: ${call.arguments}");
+      String? screen = call.arguments as String?;
+      if (screen == 'fullScreen') {
+        runApp(const MyApp(initialScreen: 'fullScreen'));
+      } else {
+        runApp(const MyApp(initialScreen: 'card'));
+      }
+    }
+  });
+
+  // Fallback to card view if no arguments are provided
+  runApp(const MyApp(initialScreen: 'card'));
+
+  // runApp(const MyApp(
+  //   initialScreen: '',
+  // ));
+}
+
+// Entry point for the Flutter module
+// void mainWithArguments(List<String> args) {
+//   String initialScreen = args.isNotEmpty ? args[0] : 'card';
+//   runApp(MyApp(initialScreen: initialScreen));
+// }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final String initialScreen;
 
-  // VwoFlutter.tagScreenName("screenName");
-  // This widget is the root of your application.
+  const MyApp({super.key, required this.initialScreen});
+
   @override
   Widget build(BuildContext context) {
-    VwoFlutter.setScreenViewed("flutter card");
-    // VwoFlutter.tagScreenName("screenName");
-    // VwoFlutter.pauseRecording();
+    Widget homeWidget;
+
+    // Decide which screen to show
+    if (initialScreen == 'fullScreen') {
+      homeWidget = const FullScreenPage();
+    } else {
+      homeWidget = const CardPage();
+    }
+
     return MaterialApp(
-      // navigatorObservers: [
-      //   VwoNavigatorObserver(),
-      // ],
-      home: Scaffold(
-        body: Center(
-          child: Card(
-            child: Container(
-              width: 350,
-              height: 200,
-              color: Colors.blue,
-              child: Center(
-                child: Text(
-                  'Flutter Card',
-                  style: TextStyle(color: Colors.white, fontSize: 24),
-                ),
+      home: homeWidget,
+    );
+  }
+}
+
+class CardPage extends StatefulWidget {
+  const CardPage({super.key});
+
+  @override
+  _CardPageState createState() => _CardPageState();
+}
+
+class _CardPageState extends State<CardPage> with WidgetsBindingObserver {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+
+    // Call your function when the widget is first created
+    onScreenVisible();
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  // This method is called when the app's lifecycle state changes
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      onScreenVisible();
+    }
+  }
+
+  void onScreenVisible() {
+    print('CardPage is now visible');
+    VwoFlutter.setScreenViewed("flutter card");
+    // Add any additional logic you want to execute when the screen becomes visible
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Card(
+          child: Container(
+            width: 350,
+            height: 200,
+            color: Colors.blue,
+            child: const Center(
+              child: Text(
+                'Flutter Card',
+                style: TextStyle(color: Colors.white, fontSize: 24),
               ),
             ),
           ),
@@ -38,88 +115,131 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+// class CardPage extends StatelessWidget {
+//   const CardPage({super.key});
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
+//   @override
+//   Widget build(BuildContext context) {
+//     VwoFlutter.setScreenViewed("flutter card");
 
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
+//     return Scaffold(
+//       body: Center(
+//         child: Card(
+//           child: Container(
+//             width: 350,
+//             height: 200,
+//             color: Colors.blue,
+//             child: Center(
+//               child: const Text(
+//                 'Flutter Card',
+//                 style: TextStyle(color: Colors.white, fontSize: 24),
+//               ),
+//             ),
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
 
-  final String title;
+class FullScreenPage extends StatefulWidget {
+  const FullScreenPage({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  _FullScreenPageState createState() => _FullScreenPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+class _FullScreenPageState extends State<FullScreenPage>
+    with WidgetsBindingObserver {
+  final List<String> items = List.generate(20, (index) => 'Item ${index + 1}');
 
-  void _incrementCounter() {
-    setState(() {
-      // VwoFlutter.tagScreenName("flutter card");
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+
+    // Call your function when the widget is first created
+    onScreenVisible();
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  // This method is called when the app's lifecycle state changes
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      onScreenVisible();
+    }
+  }
+
+  void onScreenVisible() {
+    print('FullScreenPage is now visible');
+    VwoFlutter.setScreenViewed("FullFlutterScreen");
+    // Add any additional logic you want to execute when the screen becomes visible
   }
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
+        title: const Text('Full Screen Page'),
       ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Invoke "debug painting" (press "p" in the console, choose the
-          // "Toggle Debug Paint" action from the Flutter Inspector in Android
-          // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-          // to see the wireframe for each widget.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
+      body: ListView.builder(
+        itemCount: items.length,
+        itemBuilder: (context, index) {
+          return ListTile(
+            title: Text(items[index]),
+            onTap: () {
+              // Handle item tap if needed
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text('Tapped on ${items[index]}')),
+              );
+            },
+          );
+        },
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
+
+// class FullScreenPage extends StatelessWidget {
+//   const FullScreenPage({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     VwoFlutter.setScreenViewed("FullFlutterScreen");
+//     final items =
+//         List.generate(20, (index) => 'Item ${index + 1}'); // Example list
+
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('Full Screen Page'),
+//         // leading: IconButton(
+//         //   icon: const Icon(Icons.arrow_back),
+//         //   onPressed: () {
+//         //     // Close the Flutter screen and return to Swift
+//         //     Navigator.pop(context);
+//         //   },
+//         // ),
+//       ),
+//       body: ListView.builder(
+//         itemCount: items.length,
+//         itemBuilder: (context, index) {
+//           return ListTile(
+//             title: Text(items[index]),
+//             onTap: () {
+//               // Handle item tap if needed
+//               ScaffoldMessenger.of(context).showSnackBar(
+//                 SnackBar(content: Text('Tapped on ${items[index]}')),
+//               );
+//             },
+//           );
+//         },
+//       ),
+//     );
+//   }
+// }

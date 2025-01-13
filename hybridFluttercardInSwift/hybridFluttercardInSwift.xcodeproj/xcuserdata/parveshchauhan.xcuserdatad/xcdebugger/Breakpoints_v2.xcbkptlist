@@ -14,8 +14,8 @@
             filePath = "hybridFluttercardInSwift/SwitCardController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "back(sender:)"
             landmarkType = "7">
          </BreakpointContent>

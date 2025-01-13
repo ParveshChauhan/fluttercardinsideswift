@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p8N-FQ-cwV">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -27,21 +27,46 @@
                                     <segue destination="UJJ-Gq-SNO" kind="presentation" modalPresentationStyle="fullScreen" id="VGr-07-lKq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24C-za-HQn">
+                                <rect key="frame" x="111.00000000000001" y="463.66666666666669" width="171.33333333333337" height="35"/>
+                                <color key="backgroundColor" red="0.18644203470000001" green="0.42503875340000002" blue="0.65896826679999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to flutter screen"/>
+                                <connections>
+                                    <action selector="GoTOFlutterScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KHU-Od-zjY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPK-92-Jaz">
+                                <rect key="frame" x="157.33333333333334" y="353.66666666666669" width="78.666666666666657" height="35"/>
+                                <color key="backgroundColor" red="0.18644203470000001" green="0.42503875340000002" blue="0.65896826679999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SwiftUI"/>
+                                <connections>
+                                    <segue destination="Mvy-k0-jSZ" kind="presentation" modalPresentationStyle="fullScreen" id="0SG-ac-jhA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="3cy-Zv-B2J" firstAttribute="top" secondItem="LPK-92-Jaz" secondAttribute="bottom" constant="20" id="9zx-GB-i5W"/>
+                            <constraint firstItem="24C-za-HQn" firstAttribute="top" secondItem="3cy-Zv-B2J" secondAttribute="bottom" constant="20" id="CSf-ht-OdE"/>
+                            <constraint firstItem="24C-za-HQn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PDg-cs-5Q8"/>
+                            <constraint firstItem="LPK-92-Jaz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="poh-6Z-i4k"/>
                             <constraint firstItem="3cy-Zv-B2J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vXy-Gi-yTW"/>
                             <constraint firstItem="3cy-Zv-B2J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y0H-Gm-w4S"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="z0f-Pw-ApL"/>
                     <connections>
                         <outlet property="openVcButton" destination="3cy-Zv-B2J" id="7Qv-92-Tzv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13" y="4"/>
+            <point key="canvasLocation" x="912.2137404580152" y="3.5211267605633805"/>
         </scene>
         <!--Cards-->
         <scene sceneID="vjo-MO-B1V">
@@ -75,14 +100,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAb-A4-Viu">
-                                                <rect key="frame" x="10" y="260" width="373" height="400"/>
+                                                <rect key="frame" x="10" y="260" width="373" height="200"/>
                                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="400" id="4b0-tG-j9Q"/>
+                                                    <constraint firstAttribute="height" constant="200" id="4b0-tG-j9Q"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kt-28-ckf">
-                                                <rect key="frame" x="10" y="670" width="373" height="200"/>
+                                                <rect key="frame" x="10" y="470" width="373" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8P-be-wbB">
                                                         <rect key="frame" x="155.66666666666666" y="87.333333333333371" width="61.666666666666657" height="25.333333333333329"/>
@@ -99,7 +124,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZK-Ue-MNB">
-                                                <rect key="frame" x="10" y="880" width="373" height="200"/>
+                                                <rect key="frame" x="10" y="680" width="373" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDE-dx-XmC">
                                                         <rect key="frame" x="155.66666666666666" y="87.333333333333371" width="62" height="25.333333333333329"/>
@@ -165,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8iW-QP-YIf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1666.4122137404579" y="22.535211267605636"/>
+            <point key="canvasLocation" x="3519.8473282442746" y="22.535211267605636"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ab0-Wh-1HR">
@@ -183,7 +208,128 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Le3-Zv-edM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="739.69465648854964" y="22.535211267605636"/>
+            <point key="canvasLocation" x="1961" y="74"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sej-wt-t2W">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p8N-FQ-cwV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u7v-5L-xcP">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1nJ-Cf-3eh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xHK-GX-OmW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14.503816793893129" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wdb-3E-LFf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mvy-k0-jSZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gvt-sZ-KXX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LE7-f0-PE2" kind="relationship" relationship="rootViewController" id="dbf-oE-5Rk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l8y-Mt-a3A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890.8396946564885" y="-604.22535211267609"/>
+        </scene>
+        <!--Swiftui ShowcaseVC-->
+        <scene sceneID="Ocn-mz-AHc">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="LE7-f0-PE2" customClass="SwiftuiShowcaseVC" customModule="hybridFluttercardInSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Now-nB-Bvj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="REh-fc-ghg">
+                                <rect key="frame" x="122.66666666666669" y="306" width="148" height="240.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr3-7o-pmI">
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="open SwiftUI">
+                                            <attributedString key="attributedSubtitle"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="openSwiftUI:" destination="LE7-f0-PE2" eventType="touchUpInside" id="f4A-5h-Nqd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dj7-Rl-MmV">
+                                        <rect key="frame" x="0.0" y="34.333333333333314" width="148" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="List view"/>
+                                        <connections>
+                                            <action selector="openList:" destination="LE7-f0-PE2" eventType="touchUpInside" id="xc2-RR-8O6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72p-3i-GTq">
+                                        <rect key="frame" x="0.0" y="68.666666666666686" width="148" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="UI Component"/>
+                                        <connections>
+                                            <action selector="openComponent:" destination="LE7-f0-PE2" eventType="touchUpInside" id="oBP-tS-ooF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQP-Ur-H2o">
+                                        <rect key="frame" x="0.0" y="103" width="148" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Custom Gesture"/>
+                                        <connections>
+                                            <action selector="openCustomGesture:" destination="LE7-f0-PE2" eventType="touchUpInside" id="l9M-GX-1o9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTg-4E-WEa">
+                                        <rect key="frame" x="0.0" y="137.33333333333331" width="148" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Custom Event"/>
+                                        <connections>
+                                            <action selector="openCustomEvent:" destination="LE7-f0-PE2" eventType="touchUpInside" id="rSw-sJ-vw4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HD-x5-fU8">
+                                        <rect key="frame" x="0.0" y="171.66666666666669" width="148" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Custom popup"/>
+                                        <connections>
+                                            <action selector="openCustomPopUp:" destination="LE7-f0-PE2" eventType="touchUpInside" id="V3J-M6-uZZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rT3-q7-oac">
+                                        <rect key="frame" x="0.0" y="206" width="148" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Crash/ANR"/>
+                                        <connections>
+                                            <action selector="openCrashAnr:" destination="LE7-f0-PE2" eventType="touchUpInside" id="tLF-0p-hku"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZBd-w2-4JI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="REh-fc-ghg" firstAttribute="centerY" secondItem="Now-nB-Bvj" secondAttribute="centerY" id="4Oi-We-dVr"/>
+                            <constraint firstItem="REh-fc-ghg" firstAttribute="centerX" secondItem="Now-nB-Bvj" secondAttribute="centerX" id="mK0-CG-XJ9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yH1-d1-C2E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hir-pA-Q3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2834" y="-588"/>
         </scene>
     </scenes>
     <resources>
@@ -191,7 +337,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
