@@ -17,7 +17,7 @@ class SwiftuiShowcaseVC: UIViewController {
             // Do any additional setup after loading the view.
         }
         override func viewDidAppear(_ animated: Bool) {
-            VWO.setScreenName(name: "firstViewcontoller")
+            VWO.setScreenName(name: "firstViewcontoller",viewcontroller: self)
         }
         
         @IBAction func openSwiftUI(_ sender: Any) {

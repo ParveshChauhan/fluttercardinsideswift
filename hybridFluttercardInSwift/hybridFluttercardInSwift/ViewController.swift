@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
     }
     override func viewDidAppear(_ animated: Bool) {
-        VWO.setScreenName(name:  "viewController")
+        VWO.setScreenName(name:  "viewController",viewcontroller: self)
         
         if isFlutter {
             print("flutter is dismissed")
@@ -48,6 +48,7 @@ class ViewController: UIViewController {
                 }else{
                     print("Flutter screen \(String(describing: result))")
 
+//                    VWO.listenFlutterView(viewController:flutterViewController)
 //                    self.present(flutterViewController, animated: true) {
 //                        self.isFlutter = true
 //                    }

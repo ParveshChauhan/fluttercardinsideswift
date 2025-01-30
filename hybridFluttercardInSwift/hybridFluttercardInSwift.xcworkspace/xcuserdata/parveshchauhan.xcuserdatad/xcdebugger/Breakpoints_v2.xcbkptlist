@@ -7,64 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "356757CB-CF93-4840-90D1-D9B81BA0B572"
+            uuid = "4D408F93-9C99-4D52-A335-71A44D079472"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "hybridFluttercardInSwift/ViewController.swift"
+            filePath = "../../../Project/Hybrid/vwo-insights-ios-sdk-hybrid/VWO/ViewModels/VWO.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "GoTOFlutterScreen(_:)"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "setScreenName(name:viewcontroller:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "03F12646-D662-4FA3-9C3A-67104D59D907"
+            uuid = "2BF7F1E5-F152-4BAD-A3A9-ED178CE61325"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "hybridFluttercardInSwift/ViewController.swift"
+            filePath = "../../../Project/Hybrid/vwo-insights-ios-sdk-hybrid/VWO/ViewModels/VWO.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "GoTOFlutterScreen(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "441F1983-D488-4957-80EB-8318D1F81241"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "hybridFluttercardInSwift/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "GoTOFlutterScreen(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "91877E86-7A2C-4803-8302-9CBF1674D8FE"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "hybridFluttercardInSwift/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "GoTOFlutterScreen(_:)"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
+            landmarkName = "setScreenName(name:viewcontroller:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
