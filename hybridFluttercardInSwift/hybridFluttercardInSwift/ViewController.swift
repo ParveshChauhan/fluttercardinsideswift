@@ -48,7 +48,7 @@ class ViewController: UIViewController {
                 }else{
                     print("Flutter screen \(String(describing: result))")
 
-//                    VWO.listenFlutterView(viewController:flutterViewController)
+                    VWO.listenFlutterView(viewController:flutterViewController)
 //                    self.present(flutterViewController, animated: true) {
 //                        self.isFlutter = true
 //                    }
