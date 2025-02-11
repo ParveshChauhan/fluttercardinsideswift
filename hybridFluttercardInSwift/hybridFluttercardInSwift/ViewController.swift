@@ -18,9 +18,9 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     override func viewDidAppear(_ animated: Bool) {
-        VWO.setScreenName(name:  "viewController",viewcontroller: self)
         
         if isFlutter {
             print("flutter is dismissed")

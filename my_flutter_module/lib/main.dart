@@ -185,24 +185,21 @@ class _FullScreenPageState extends State<FullScreenPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Full Screen Page'),
-      ),
-      body: ListView.builder(
-        itemCount: items.length,
-        itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(items[index]),
-            onTap: () {
-              // Handle item tap if needed
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(content: Text('Tapped on ${items[index]}')),
-              );
-            },
-          );
-        },
-      ),
-    );
+        appBar: AppBar(
+          title: const Text('Full Screen Page'),
+        ),
+        body: ListView(
+          children: items.map((item) {
+            return ListTile(
+              title: VwoWrapper(child: Text(item)),
+              onTap: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('Tapped on $item')),
+                );
+              },
+            );
+          }).toList(),
+        ));
   }
 }
 

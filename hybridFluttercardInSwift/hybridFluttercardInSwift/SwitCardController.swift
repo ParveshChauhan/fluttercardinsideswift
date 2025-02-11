@@ -60,7 +60,7 @@ class SwiftCardController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        VWO.setScreenName(name: "swiftcard",viewcontroller: self)
+        
     }
     override func viewDidAppear(_ animated: Bool) {
     }

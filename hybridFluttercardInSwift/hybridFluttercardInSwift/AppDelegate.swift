@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
           NSLog("Document Path: %@", documentsPath)
 //       
-        VWO.configure(accountId: "780027", appId: "e7277b4225ee69ca8d60b2994556dfc3", userId: "", isModuleEnabled: true) { result in
+        VWO.configure(accountId: "780027", appId: "e7277b4225ee69ca8d60b2994556dfc3", userId: "", isModuleEnabled: true, isSwiftUI: true) { result in
            
             VWO.startSessionRecording()
         }
