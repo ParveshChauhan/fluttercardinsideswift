@@ -1,6 +1,14 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## Google-Mobile-Ads-SDK
+
+Copyright 2025 Google LLC
+
+## GoogleUserMessagingPlatform
+
+Copyright 2024 Google LLC
+
 ## vwo-insights-ios-flutter-sdk
 
 Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.

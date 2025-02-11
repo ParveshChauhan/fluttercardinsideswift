@@ -10,7 +10,7 @@ target 'hybridFluttercardInSwift' do
   use_frameworks!
   use_modular_headers!
   # Pods for hybridFluttercardInSwift
-  
+  pod 'Google-Mobile-Ads-SDK'
   pod 'vwo-insights-ios-flutter-sdk' , :path => '/Users/parveshchauhan/Desktop/vwo'
   
 #  flutter_application_path = '/Users/parveshchauhan/Documents/mixproject/fluttercardinsideswift/my_flutter_module'

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B4AFB1FF8301E9F375BBFA9F /* Pods_hybridFluttercardInSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180714576A625778806EA08C /* Pods_hybridFluttercardInSwift.framework */; };
+		BA72123A2D5B88DC003CE342 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7212392D5B88C9003CE342 /* AdViewController.swift */; };
+		BA72123E2D5B8905003CE342 /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA72123D2D5B8905003CE342 /* NativeAdView.xib */; };
+		BA72123F2D5B8905003CE342 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA72123C2D5B8905003CE342 /* CollectionViewCell.xib */; };
+		BA7212402D5B8905003CE342 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA72123B2D5B8905003CE342 /* CollectionViewCell.swift */; };
 		BAD4EC172D31325F00BA242E /* SwiftuiShowcaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC162D31325F00BA242E /* SwiftuiShowcaseVC.swift */; };
 		BAD4EC322D3132FB00BA242E /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC192D3132FB00BA242E /* FetchData.swift */; };
 		BAD4EC332D3132FB00BA242E /* CrashAnrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4EC1B2D3132FB00BA242E /* CrashAnrView.swift */; };
@@ -36,6 +40,10 @@
 /* Begin PBXFileReference section */
 		180714576A625778806EA08C /* Pods_hybridFluttercardInSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hybridFluttercardInSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93B7E4215F61C2238F3AB59 /* Pods-hybridFluttercardInSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hybridFluttercardInSwift.release.xcconfig"; path = "Target Support Files/Pods-hybridFluttercardInSwift/Pods-hybridFluttercardInSwift.release.xcconfig"; sourceTree = "<group>"; };
+		BA7212392D5B88C9003CE342 /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		BA72123B2D5B8905003CE342 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		BA72123C2D5B8905003CE342 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		BA72123D2D5B8905003CE342 /* NativeAdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
 		BAD4EC162D31325F00BA242E /* SwiftuiShowcaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiShowcaseVC.swift; sourceTree = "<group>"; };
 		BAD4EC192D3132FB00BA242E /* FetchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 		BAD4EC1B2D3132FB00BA242E /* CrashAnrView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashAnrView.swift; sourceTree = "<group>"; };
@@ -224,12 +232,16 @@
 		BAE034502D0C0F76008B7DD2 /* hybridFluttercardInSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BA72123B2D5B8905003CE342 /* CollectionViewCell.swift */,
+				BA72123C2D5B8905003CE342 /* CollectionViewCell.xib */,
+				BA72123D2D5B8905003CE342 /* NativeAdView.xib */,
 				BAD4EC182D3132AF00BA242E /* SwiftUIViews */,
 				BAE034512D0C0F76008B7DD2 /* AppDelegate.swift */,
 				BAE034532D0C0F76008B7DD2 /* SceneDelegate.swift */,
 				BAE034552D0C0F76008B7DD2 /* ViewController.swift */,
 				BAE034652D0C1015008B7DD2 /* SwitCardController.swift */,
 				BAE0346F2D0C153A008B7DD2 /* FlutterManager.swift */,
+				BA7212392D5B88C9003CE342 /* AdViewController.swift */,
 				BAE034572D0C0F77008B7DD2 /* Main.storyboard */,
 				BAE0345A2D0C0F78008B7DD2 /* Assets.xcassets */,
 				BAE0345C2D0C0F78008B7DD2 /* LaunchScreen.storyboard */,
@@ -270,6 +282,7 @@
 				BAE0344C2D0C0F76008B7DD2 /* Resources */,
 				686960E9553CC3D879093468 /* [CP] Embed Pods Frameworks */,
 				D50466ABCE3187775DB83F83 /* [CP-User] Embed Flutter Build my_flutter_module Script */,
+				5E0E574724CA372BD5F0BC85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,6 +333,8 @@
 			files = (
 				BAE0345B2D0C0F78008B7DD2 /* Assets.xcassets in Resources */,
 				BAE0345E2D0C0F78008B7DD2 /* Base in Resources */,
+				BA72123E2D5B8905003CE342 /* NativeAdView.xib in Resources */,
+				BA72123F2D5B8905003CE342 /* CollectionViewCell.xib in Resources */,
 				BAE034592D0C0F77008B7DD2 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +362,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E0E574724CA372BD5F0BC85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hybridFluttercardInSwift/Pods-hybridFluttercardInSwift-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hybridFluttercardInSwift/Pods-hybridFluttercardInSwift-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hybridFluttercardInSwift/Pods-hybridFluttercardInSwift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		686960E9553CC3D879093468 /* [CP] Embed Pods Frameworks */ = {
@@ -403,11 +435,13 @@
 				BAD4EC172D31325F00BA242E /* SwiftuiShowcaseVC.swift in Sources */,
 				BAD4EC362D3132FB00BA242E /* CustomPopupView.swift in Sources */,
 				BAD4EC3B2D3132FB00BA242E /* CustomGestureView.swift in Sources */,
+				BA7212402D5B8905003CE342 /* CollectionViewCell.swift in Sources */,
 				BAD4EC3C2D3132FB00BA242E /* GroceryListView.swift in Sources */,
 				BAE034662D0C1015008B7DD2 /* SwitCardController.swift in Sources */,
 				BAE034562D0C0F76008B7DD2 /* ViewController.swift in Sources */,
 				BAE034522D0C0F76008B7DD2 /* AppDelegate.swift in Sources */,
 				BAD4EC382D3132FB00BA242E /* DayList.swift in Sources */,
+				BA72123A2D5B88DC003CE342 /* AdViewController.swift in Sources */,
 				BAE034542D0C0F76008B7DD2 /* SceneDelegate.swift in Sources */,
 				BAD4EC3F2D3132FB00BA242E /* ViewModelProtocol.swift in Sources */,
 				BAD4EC342D3132FB00BA242E /* CustomComponentView.swift in Sources */,
