@@ -38,6 +38,9 @@ class AdViewController: UIViewController, UICollectionViewDataSource, UICollecti
         self.dismiss(animated: true)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
     override func viewDidAppear(_ animated: Bool) {
     }
     
