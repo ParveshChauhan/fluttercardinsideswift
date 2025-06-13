@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import vwo_insights_ios_flutter_sdk
 import SwiftUI
 
 struct GroceryItem: Identifiable {
@@ -62,47 +62,50 @@ struct GroceryListView: View {
     @State private var newItemName: String = ""
     
     var body: some View {
-        NavigationView {
-            VStack {
-                // Add New Item Section
-                HStack {
-                    TextField("Add new item", text: $newItemName)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding(.horizontal)
-                    Button(action: {
-                        viewModel.addItem(name: newItemName)
-                        newItemName = ""
-                    }) {
-                        Text("Add")
-                            .padding(.vertical, 8)
-                            .padding(.horizontal, 16)
-                            .background(Color.blue)
-                            .foregroundColor(.white)
-                            .cornerRadius(8)
+        VWOHideContainer{
+            NavigationView {
+                VStack {
+                    // Add New Item Section
+                    HStack {
+                        TextField("Add new item", text: $newItemName)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .padding(.horizontal)
+                        Button(action: {
+                            viewModel.addItem(name: newItemName)
+                            newItemName = ""
+                        }) {
+                            Text("Add")
+                                .padding(.vertical, 8)
+                                .padding(.horizontal, 16)
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(8)
+                        }
                     }
-                }
-                .padding(.bottom)
-                
-                // Grocery Items List
-                List {
-                    ForEach(viewModel.items) { item in
-                        HStack {
-                            Text(item.name)
-                                .strikethrough(item.isPurchased)
-                                .foregroundColor(item.isPurchased ? .gray : .black)
-                            Spacer()
-                            Button(action: {
-                                viewModel.togglePurchased(item: item)
-                            }) {
-                                Image(systemName: item.isPurchased ? "checkmark.circle.fill" : "circle")
-                                    .foregroundColor(item.isPurchased ? .green : .gray)
+                    .padding(.bottom)
+                    
+                    // Grocery Items List
+                    List {
+                        ForEach(viewModel.items) { item in
+                            HStack {
+                                Text(item.name)
+                                    .strikethrough(item.isPurchased)
+                                    .foregroundColor(item.isPurchased ? .gray : .black)
+                                Spacer()
+                                Button(action: {
+                                    viewModel.togglePurchased(item: item)
+                                }) {
+                                    Image(systemName: item.isPurchased ? "checkmark.circle.fill" : "circle")
+                                        .foregroundColor(item.isPurchased ? .green : .gray)
+                                }
                             }
+                            .VWOhideView()
                         }
                     }
                 }
+                .vwoTagScreenName(screenName: "Grocery list")
+                .navigationTitle("Grocery List")
             }
-            .vwoTagScreenName(screenName: "Grocery list")
-            .navigationTitle("Grocery List")
         }
     }
 }

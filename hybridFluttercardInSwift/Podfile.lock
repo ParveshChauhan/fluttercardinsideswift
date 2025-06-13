@@ -3,9 +3,9 @@ PODS:
   - FlutterPluginRegistrant (0.0.1):
     - Flutter
     - vwo_insights_flutter_sdk
-  - Google-Mobile-Ads-SDK (12.0.0):
+  - Google-Mobile-Ads-SDK (12.4.0):
     - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleUserMessagingPlatform (2.7.0)
+  - GoogleUserMessagingPlatform (3.0.0)
   - vwo-insights-ios-flutter-sdk (0.0.4)
   - vwo_insights_flutter_sdk (0.0.2):
     - Flutter
@@ -36,11 +36,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   FlutterPluginRegistrant: 4edd24c814eb6c066959c49b4067da3af945ae70
-  Google-Mobile-Ads-SDK: 14a8e52164a89a44178bd67d544f207969f8d69a
-  GoogleUserMessagingPlatform: a8b56893477f67212fbc8411c139e61d463349f5
+  Google-Mobile-Ads-SDK: db00a3836f288f94e52114f312b56fe066699d82
+  GoogleUserMessagingPlatform: f8d0cdad3ca835406755d0a69aa634f00e76d576
   vwo-insights-ios-flutter-sdk: 78c38eb6c5aa32afef074431eb0739022cb0a304
   vwo_insights_flutter_sdk: 26f98ba24ed97b6cdfc1286a52d60ee9d5dbad5c
 
 PODFILE CHECKSUM: c8d2a94b7e49dc3f4d54948963a77755b8e54411
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

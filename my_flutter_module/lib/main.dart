@@ -191,7 +191,7 @@ class _FullScreenPageState extends State<FullScreenPage>
         body: ListView(
           children: items.map((item) {
             return ListTile(
-              title: VwoWrapper(child: Text(item)),
+             title: VwoWrapper(child: Text(item)),
               onTap: () {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(content: Text('Tapped on $item')),

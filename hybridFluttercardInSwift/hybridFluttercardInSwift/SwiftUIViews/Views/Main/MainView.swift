@@ -17,6 +17,7 @@ struct MainView: View {
     
     
     var body: some View {
+        VWOHideContainer{
 //        NavigationView {
             ZStack {
                 LinearGradient(gradient: Gradient(colors: [.topColor,.centerColor,.bottomColor]),
@@ -27,7 +28,7 @@ struct MainView: View {
                     Text("Weather App")
                         .foregroundColor(Color.white)
                         .font(Font.system(size: 50))
-//                        .VWOhideView()
+                        .VWOhideView()
                     
                     HStack {
                         TextField("What is weather in Istanbul?", text: $inputText)
@@ -35,7 +36,7 @@ struct MainView: View {
                             .fixedSize()
                             .background(Color.white)
                             .clipShape(RoundedRectangle(cornerRadius: 8))
-                        
+                            .VWOhideView()
                         NavigationLink(destination: DayList()) {
                                                    Image(systemName: "magnifyingglass")
                                                        .font(.largeTitle)
@@ -65,7 +66,7 @@ struct MainView: View {
 //            .sheet(isPresented: $showingDayList) {
 //                DayList()
 //            }
-//        }
+        }
     }
 }
 

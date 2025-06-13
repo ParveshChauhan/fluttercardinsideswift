@@ -7,7 +7,7 @@ Copyright 2025 Google LLC
 
 ## GoogleUserMessagingPlatform
 
-Copyright 2024 Google LLC
+Copyright 2025 Google LLC
 
 ## vwo-insights-ios-flutter-sdk
 
